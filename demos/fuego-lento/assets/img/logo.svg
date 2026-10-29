@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Fuego Lento">
+  <defs>
+    <path id="arcTop" d="M30,100 a70,70 0 0,1 140,0"/>
+    <path id="arcBot" d="M38,104 a62,62 0 0,0 124,0"/>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#C2571A"/>
+      <stop offset=".6" stop-color="#E07B2E"/>
+      <stop offset="1" stop-color="#FFC45C"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="#1D1612"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#E07B2E" stroke-width="2"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#E9DCC7" stroke-width="1" stroke-dasharray="2 5" opacity=".6"/>
+  <!-- llama -->
+  <path d="M100 52c4 12 18 20 18 38 0 12-8 20-18 20s-18-8-18-20c0-9 5-14 8-19 1 6 4 9 7 10-2-10 0-20 3-29z" fill="url(#flame)"/>
+  <path d="M100 82c2 6 8 9 8 17 0 6-4 10-8 10s-8-4-8-10c0-5 4-9 8-17z" fill="#FFE2A8"/>
+  <!-- parrilla -->
+  <g stroke="#E9DCC7" stroke-width="3.2" stroke-linecap="round">
+    <path d="M66 116h68"/>
+    <path d="M74 116v12M87 116v12M100 116v12M113 116v12M126 116v12"/>
+    <path d="M66 128h68"/>
+  </g>
+  <text font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="26" letter-spacing="6" fill="#E9DCC7" text-anchor="middle">
+    <textPath href="#arcTop" startOffset="50%">FUEGO</textPath>
+  </text>
+  <text font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700" font-size="20" letter-spacing="7" fill="#E07B2E" text-anchor="middle" dy="8">
+    <textPath href="#arcBot" startOffset="50%">LENTO</textPath>
+  </text>
+</svg>

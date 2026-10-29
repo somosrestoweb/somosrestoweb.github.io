@@ -1,0 +1,146 @@
+{
+  "hero": {
+    "src": "assets/img/hero.jpg",
+    "title": "hero",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1558030137-a56c1b004fa3"
+  },
+  "combo": {
+    "src": "assets/img/combo.jpg",
+    "title": "combo",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1600891964092-4316c288032e"
+  },
+  "c-bife": {
+    "src": "assets/img/c-bife.jpg",
+    "title": "c-bife",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba"
+  },
+  "c-ojo": {
+    "src": "assets/img/c-ojo.jpg",
+    "title": "c-ojo",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1"
+  },
+  "c-vacio": {
+    "src": "assets/img/c-vacio.jpg",
+    "title": "c-vacio",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659"
+  },
+  "c-entrana": {
+    "src": "assets/img/c-entrana.jpg",
+    "title": "c-entrana",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1588168333986-5078d3ae3976"
+  },
+  "c-tira": {
+    "src": "assets/img/c-tira.jpg",
+    "title": "c-tira",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1544025162-d76694265947"
+  },
+  "c-brochette": {
+    "src": "assets/img/c-brochette.jpg",
+    "title": "c-brochette",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143"
+  },
+  "s-papas": {
+    "src": "assets/img/s-papas.jpg",
+    "title": "s-papas",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5"
+  },
+  "s-ensalada": {
+    "src": "assets/img/s-ensalada.jpg",
+    "title": "s-ensalada",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+  },
+  "d-vino": {
+    "src": "assets/img/d-vino.jpg",
+    "title": "d-vino",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3"
+  },
+  "story-a": {
+    "src": "assets/img/story-a.jpg",
+    "title": "story-a",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f"
+  },
+  "story-b": {
+    "src": "assets/img/story-b.jpg",
+    "title": "story-b",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf"
+  },
+  "interior": {
+    "src": "assets/img/interior.jpg",
+    "title": "interior",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+  },
+  "g-plancha": {
+    "src": "assets/img/g-plancha.jpg",
+    "title": "g-plancha",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1546964124-0cce460f38ef"
+  },
+  "g-parrillada": {
+    "src": "assets/img/g-parrillada.jpg",
+    "title": "g-parrillada",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1"
+  },
+  "g-mesa": {
+    "src": "assets/img/g-mesa.jpg",
+    "title": "g-mesa",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1592861956120-e524fc739696"
+  },
+  "g-plato": {
+    "src": "assets/img/g-plato.jpg",
+    "title": "g-plato",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1504973960431-1c467e159aa4"
+  }
+}

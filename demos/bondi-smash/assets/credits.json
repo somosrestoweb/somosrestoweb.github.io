@@ -1,0 +1,130 @@
+{
+  "hero": {
+    "src": "assets/img/hero.jpg",
+    "title": "hero",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1553979459-d2229ba7433b"
+  },
+  "b-classic": {
+    "src": "assets/img/b-classic.jpg",
+    "title": "b-classic",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+  },
+  "b-bacon": {
+    "src": "assets/img/b-bacon.jpg",
+    "title": "b-bacon",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1565299507177-b0ac66763828"
+  },
+  "b-double": {
+    "src": "assets/img/b-double.jpg",
+    "title": "b-double",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9"
+  },
+  "b-smash": {
+    "src": "assets/img/b-smash.jpg",
+    "title": "b-smash",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1607013251379-e6eecfffe234"
+  },
+  "s-fries": {
+    "src": "assets/img/s-fries.jpg",
+    "title": "s-fries",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1585109649139-366815a0d713"
+  },
+  "s-rings": {
+    "src": "assets/img/s-rings.jpg",
+    "title": "s-rings",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1639024471283-03518883512d"
+  },
+  "d-beer": {
+    "src": "assets/img/d-beer.jpg",
+    "title": "d-beer",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1608270586620-248524c67de9"
+  },
+  "interior": {
+    "src": "assets/img/interior.jpg",
+    "title": "interior",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+  },
+  "interior-2": {
+    "src": "assets/img/interior-2.jpg",
+    "title": "interior-2",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+  },
+  "kitchen": {
+    "src": "assets/img/kitchen.jpg",
+    "title": "kitchen",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1556910103-1c02745aae4d"
+  },
+  "bread": {
+    "src": "assets/img/bread.jpg",
+    "title": "bread",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff"
+  },
+  "combo": {
+    "src": "assets/img/combo.jpg",
+    "title": "combo",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d"
+  },
+  "combo-2": {
+    "src": "assets/img/combo-2.jpg",
+    "title": "combo-2",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5"
+  },
+  "burger-fries": {
+    "src": "assets/img/burger-fries.jpg",
+    "title": "burger-fries",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1561758033-d89a9ad46330"
+  },
+  "duo": {
+    "src": "assets/img/duo.jpg",
+    "title": "duo",
+    "creator": "Unsplash contributor",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "foreign_landing_url": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+  }
+}

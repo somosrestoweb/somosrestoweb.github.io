@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bondi Smash">
+  <circle cx="100" cy="100" r="100" fill="#1F3A93"/>
+  <circle cx="100" cy="100" r="89" fill="none" stroke="#F5B700" stroke-width="4" stroke-dasharray="12 8"/>
+  <!-- burger -->
+  <path d="M66 70c0-14 15-24 34-24s34 10 34 24z" fill="#F5B700"/>
+  <g fill="#FFF6E3">
+    <ellipse cx="86" cy="57" rx="2.6" ry="1.5" transform="rotate(-20 86 57)"/>
+    <ellipse cx="100" cy="52" rx="2.6" ry="1.5"/>
+    <ellipse cx="114" cy="57" rx="2.6" ry="1.5" transform="rotate(20 114 57)"/>
+    <ellipse cx="93" cy="64" rx="2.6" ry="1.5" transform="rotate(10 93 64)"/>
+    <ellipse cx="108" cy="64" rx="2.6" ry="1.5" transform="rotate(-10 108 64)"/>
+  </g>
+  <rect x="62" y="73" width="76" height="6" rx="3" fill="#FFF6E3"/>
+  <rect x="64" y="81" width="72" height="8" rx="4" fill="#D93A2B"/>
+  <path d="M68 92h64c0 6-4 9-10 9H78c-6 0-10-3-10-9z" fill="#F5B700"/>
+  <text x="100" y="138" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="36" fill="#FFF6E3" letter-spacing="1">BONDI</text>
+  <text x="100" y="164" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="20" fill="#F5B700" letter-spacing="7">SMASH</text>
+</svg>

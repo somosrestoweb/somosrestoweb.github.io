@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fuego Lento — Parrilla en Palermo</title>
+  <meta name="description" content="Fuego Lento: parrilla a leña en Palermo, CABA. Pedí delivery, retirá en el local o reservá tu mesa por WhatsApp." />
+  <meta name="theme-color" content="#1D1612" />
+  <meta property="og:title" content="Fuego Lento — Parrilla en Palermo" />
+  <meta property="og:description" content="Leña, tiempo y buena carne. Delivery, take away y reservas por WhatsApp." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261030a" />
+  <script defer src="lib/gsap.min.js?v=20261028b"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20261028b"></script>
+  <script defer src="lib/manifest.js?v=20261030a"></script>
+  <script defer src="main.js?v=20261030a"></script>
+</head>
+<body>
+
+  <!-- Íconos y la "parrilla" que decora la página -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="route" viewBox="0 0 400 40">
+      <path d="M12 20h376" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <g fill="var(--route-stop, #fff)" stroke="currentColor" stroke-width="3" stroke-linejoin="round">
+        <path d="M80 6c3 6 9 9 9 17a9 9 0 0 1-18 0c0-5 3-8 5-11 0 3 2 5 3 5-1-4 0-8 1-11z"/>
+        <path d="M200 4c4 7 11 11 11 20a11 11 0 0 1-22 0c0-6 3-9 6-13 0 4 2 6 4 6-1-5 0-9 1-13z"/>
+        <path d="M320 6c3 6 9 9 9 17a9 9 0 0 1-18 0c0-5 3-8 5-11 0 3 2 5 3 5-1-4 0-8 1-11z"/>
+      </g>
+    </symbol>
+    <symbol id="wa" viewBox="0 0 32 32">
+      <path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.2 16 5.2s11 4.7 11 10.6-4.9 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.6-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/>
+    </symbol>
+    <symbol id="i-moto" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="7.5" cy="22.5" r="3.5"/><circle cx="24.5" cy="22.5" r="3.5"/>
+        <path d="M11 22.5h8l3.5-8H17M19.5 8h3.5l1.5 14.5M3 11h9v7H3z"/>
+      </g>
+    </symbol>
+    <symbol id="i-bag" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 11h19L24 27H8z"/><path d="M12 14V9a4 4 0 0 1 8 0v5"/>
+      </g>
+    </symbol>
+    <symbol id="i-table" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 4v8a3 3 0 0 0 6 0V4M12 4v24M23 4c-2.5 2-3.5 6-3.5 11H23v13"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- Splash -->
+  <div class="splash" data-splash aria-hidden="true">
+    <img src="assets/img/logo.svg" alt="" width="180" height="180" />
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" data-nav>
+    <a href="#inicio" class="nav__logo" aria-label="Fuego Lento — inicio">
+      <img src="assets/img/logo.svg" alt="Fuego Lento" width="56" height="56" />
+    </a>
+    <nav class="nav__links" data-menu aria-label="Principal">
+      <a href="#historia">Historia</a>
+      <a href="#menu">Carta</a>
+      <a href="#local">El local</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#pedir" class="btn btn--brand btn--sm">Pedir o reservar</a>
+    </nav>
+    <button class="nav__burger" data-burger aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__embers" data-embers aria-hidden="true"></canvas>
+      <div class="hero__copy">
+        <p class="kicker">Parrilla a leña · Palermo</p>
+        <h1 class="hero__title" data-split>Leña, tiempo<br />y <em>buena carne.</em></h1>
+        <svg class="route route--hero" aria-hidden="true"><use href="#route"/></svg>
+        <p class="hero__lead">Cortes elegidos uno por uno, quebracho y espinillo, y la paciencia de dejar que la brasa haga su trabajo. Te lo llevamos, lo pasás a buscar o te sentás a comerlo acá.</p>
+        <div class="hero__ctas">
+          <a href="#pedir" class="btn btn--brand">Pedir o reservar</a>
+          <a href="#menu" class="btn btn--ghost">Ver la carta</a>
+        </div>
+        <ul class="hero__facts">
+          <li><strong>Delivery</strong> en Palermo</li>
+          <li><strong>Take away</strong> en 30 min</li>
+          <li><strong>Mesas</strong> al lado del fuego</li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__disc" data-parallax="0.12">
+          <img src="assets/img/hero.jpg" alt="Costillas dorándose sobre la parrilla con brasas encendidas" width="1400" height="1400" fetchpriority="high" />
+        </div>
+        <svg class="hero__badge" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <circle cx="100" cy="100" r="96" />
+          <text><textPath href="#circ">A LEÑA DESDE 2009 ✺ FUEGO LENTO ✺ </textPath></text>
+          <text x="100" y="112" text-anchor="middle" class="hero__badge-mid">4 h</text>
+        </svg>
+        <span class="hero__note">la tira, cuatro horas<br/>a fuego lento ↘</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Parrilla a leña</span><i>✺</i><span>Delivery</span><i>✺</i><span>Take away</span><i>✺</i><span>Cortes madurados</span><i>✺</i><span>Palermo, CABA</span><i>✺</i>
+        <span>Parrilla a leña</span><i>✺</i><span>Delivery</span><i>✺</i><span>Take away</span><i>✺</i><span>Cortes madurados</span><i>✺</i><span>Palermo, CABA</span><i>✺</i>
+      </div>
+    </div>
+
+    <!-- HISTORIA -->
+    <section class="story" id="historia">
+      <div class="story__images">
+        <figure class="story__img story__img--a reveal"><img src="assets/img/story-a.jpg" alt="Tabla con cortes de carne crudos, chorizos y especias" loading="lazy" width="1400" height="933" /></figure>
+        <figure class="story__img story__img--b reveal"><img src="assets/img/story-b.jpg" alt="Parrillero trabajando frente al fuego" loading="lazy" width="1200" height="800" /></figure>
+        <div class="story__stamp" aria-hidden="true">
+          <img src="assets/img/logo.svg" alt="" width="120" height="120" loading="lazy" />
+        </div>
+      </div>
+      <div class="story__copy">
+        <p class="kicker">Nuestra historia</p>
+        <h2 class="h2 reveal">Empezó en un patio,<br/>con un domingo y <em>un asador.</em></h2>
+        <p class="reveal">Fuego Lento nació de los asados de los domingos en la casa de los Ferreyra. Los amigos traían a otros amigos, el patio quedó chico y en 2009 nos animamos a abrir la parrilla en Palermo.</p>
+        <p class="reveal">Seguimos haciendo lo mismo: leña de quebracho y espinillo, nada de gas, carne de feedlot cero y cortes madurados en cámara. Sal gruesa, brasa pareja y el tiempo que cada corte necesita.</p>
+        <dl class="stats">
+          <div><dt><span data-count="100">100</span>%</dt><dd>a leña</dd></div>
+          <div><dt><span data-count="21">21</span></dt><dd>días de maduración</dd></div>
+          <div><dt><span data-count="15">15</span></dt><dd>años de parrilla</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="menu" id="menu">
+      <div class="menu__head">
+        <p class="kicker kicker--light">La carta</p>
+        <h2 class="h2">Elegí tu <em>corte.</em></h2>
+        <div class="tabs" role="tablist" data-tabs>
+          <button role="tab" aria-selected="true" data-tab="cortes">De la parrilla</button>
+          <button role="tab" aria-selected="false" data-tab="sides">Guarniciones</button>
+          <button role="tab" aria-selected="false" data-tab="drinks">Bebidas</button>
+        </div>
+      </div>
+
+      <!-- Cada producto con data-item + data-price aparece solo en el formulario de pedido. -->
+      <div class="menu__grid" data-menu-grid>
+        <!-- De la parrilla -->
+        <article class="dish" data-cat="cortes" data-item="Bife de chorizo 400 g" data-price="24900">
+          <div class="dish__img"><img src="assets/img/c-bife.jpg" alt="Bife de chorizo cortado en tabla" loading="lazy" width="1400" height="933" /><span class="dish__tag">El clásico</span></div>
+          <div class="dish__body"><h3>Bife de chorizo</h3><p>400 g, alto y jugoso, con costra de sal gruesa. Lo servimos a punto salvo que nos pidas otra cosa.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish" data-cat="cortes" data-item="Ojo de bife 350 g" data-price="27500">
+          <div class="dish__img"><img src="assets/img/c-ojo.jpg" alt="Ojo de bife en sartén de hierro con papas" loading="lazy" width="1400" height="933" /><span class="dish__tag dish__tag--gold">Madurado 21 días</span></div>
+          <div class="dish__body"><h3>Ojo de bife</h3><p>350 g del corte más marmolado, madurado en cámara. Con manteca de hierbas y ajo asado.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish" data-cat="cortes" data-item="Vacío" data-price="21900">
+          <div class="dish__img"><img src="assets/img/c-vacio.jpg" alt="Vacío cortado en tiras con papas" loading="lazy" width="1400" height="933" /></div>
+          <div class="dish__body"><h3>Vacío</h3><p>Tres horas a fuego bajo, con la grasa crocante y el centro que se corta con cuchara.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish" data-cat="cortes" data-item="Entraña" data-price="23500">
+          <div class="dish__img"><img src="assets/img/c-entrana.jpg" alt="Entraña jugosa cortada" loading="lazy" width="1400" height="933" /></div>
+          <div class="dish__body"><h3>Entraña</h3><p>Fina, sabrosa y bien sellada. Con chimichurri de la casa.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish" data-cat="cortes" data-item="Tira de asado" data-price="19900">
+          <div class="dish__img"><img src="assets/img/c-tira.jpg" alt="Tira de asado sobre tabla con tomates" loading="lazy" width="1200" height="801" /><span class="dish__tag">Para compartir</span></div>
+          <div class="dish__body"><h3>Tira de asado</h3><p>Cuatro horas a fuego lento, como dice el nombre. Ideal para dos.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish" data-cat="cortes" data-item="Brochette mixta" data-price="16900">
+          <div class="dish__img"><img src="assets/img/c-brochette.jpg" alt="Brochettes de carne con papas y tomate" loading="lazy" width="1400" height="933" /></div>
+          <div class="dish__body"><h3>Brochette mixta</h3><p>Bife, cerdo, morrón y cebolla morada, con papas fritas.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish dish--list dish--wide" data-cat="cortes">
+          <div class="dish__body">
+            <h3>Para picar mientras esperás</h3>
+            <ul class="pricelist">
+              <li data-item="Provoleta" data-price="9500"><span>Provoleta con orégano</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Provoleta al pedido">+</button></li>
+              <li data-item="Chorizo" data-price="5900"><span>Chorizo de cerdo</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Chorizo al pedido">+</button></li>
+              <li data-item="Morcilla" data-price="5500"><span>Morcilla</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Morcilla al pedido">+</button></li>
+              <li data-item="Mollejas" data-price="15900"><span>Mollejas al limón</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Mollejas al pedido">+</button></li>
+            </ul>
+          </div>
+        </article>
+        <!-- Guarniciones -->
+        <article class="dish" data-cat="sides" data-item="Papas fritas" data-price="7500">
+          <div class="dish__img"><img src="assets/img/s-papas.jpg" alt="Papas fritas en plato oscuro" loading="lazy" width="1400" height="933" /></div>
+          <div class="dish__body"><h3>Papas fritas</h3><p>Cortadas a mano y fritas dos veces. Para dos personas.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish" data-cat="sides" data-item="Ensalada de la casa" data-price="6900">
+          <div class="dish__img"><img src="assets/img/s-ensalada.jpg" alt="Ensalada de hojas verdes con cebolla morada" loading="lazy" width="1400" height="933" /></div>
+          <div class="dish__body"><h3>Ensalada de la casa</h3><p>Hojas verdes, cebolla morada, tomate y vinagreta de mostaza.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish dish--list" data-cat="sides">
+          <div class="dish__body">
+            <h3>Y además</h3>
+            <ul class="pricelist">
+              <li data-item="Papas a la provenzal" data-price="8200"><span>Papas a la provenzal</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Papas a la provenzal al pedido">+</button></li>
+              <li data-item="Calabaza asada" data-price="6500"><span>Calabaza asada en las brasas</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Calabaza asada al pedido">+</button></li>
+              <li data-item="Rúcula y parmesano" data-price="8900"><span>Rúcula y parmesano</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Rúcula y parmesano al pedido">+</button></li>
+            </ul>
+          </div>
+        </article>
+        <!-- Bebidas -->
+        <article class="dish" data-cat="drinks" data-item="Malbec de la casa (botella)" data-price="18000">
+          <div class="dish__img"><img src="assets/img/d-vino.jpg" alt="Copas de vino tinto brindando" loading="lazy" width="1400" height="933" /></div>
+          <div class="dish__body"><h3>Malbec de la casa</h3><p>Botella de 750 ml de una bodega chica de Luján de Cuyo. El que mejor va con la carne.</p><div class="dish__foot"><span class="dish__price" data-price-label></span><button type="button" class="dish__add" data-add>+ Agregar</button></div></div>
+        </article>
+        <article class="dish dish--list" data-cat="drinks">
+          <div class="dish__body">
+            <h3>Y además</h3>
+            <ul class="pricelist">
+              <li data-item="Copa de Malbec" data-price="5500"><span>Copa de Malbec</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Copa de Malbec al pedido">+</button></li>
+              <li data-item="Cerveza 1 L" data-price="6500"><span>Cerveza 1 L</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Cerveza 1 L al pedido">+</button></li>
+              <li data-item="Gaseosa 500 ml" data-price="2900"><span>Gaseosa 500 ml</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Gaseosa 500 ml al pedido">+</button></li>
+              <li data-item="Agua 500 ml" data-price="2200"><span>Agua 500 ml</span><b data-price-label></b><button type="button" class="pricelist__add" data-add aria-label="Agregar Agua 500 ml al pedido">+</button></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <p class="menu__note">Todos los cortes salen solos: sumales una guarnición. ¿Lo querés jugoso, a punto o cocido? Aclaralo en tu pedido.</p>
+    </section>
+
+    <!-- DELIVERY / TAKE AWAY -->
+    <section class="combo" id="combo">
+      <div class="combo__img reveal"><img src="assets/img/combo.jpg" alt="Plato con corte a la parrilla y papas fritas" loading="lazy" width="1200" height="1200" /></div>
+      <div class="combo__copy">
+        <p class="kicker kicker--light">Delivery &amp; take away</p>
+        <h2 class="h2 reveal">El asado,<br/><em>en tu mesa.</em></h2>
+        <p class="reveal">Armá tu pedido desde la carta y elegí si te lo llevamos o si pasás a buscarlo. Te llega todo listo a nuestro WhatsApp y te confirmamos el total y la demora.</p>
+        <div class="combo__ctas reveal">
+          <a class="btn btn--white" href="#pedir" data-mode="delivery">
+            <svg class="ico" aria-hidden="true"><use href="#i-moto"/></svg> Pedir delivery
+          </a>
+          <a class="btn btn--outline-white" href="#pedir" data-mode="takeaway">
+            <svg class="ico" aria-hidden="true"><use href="#i-bag"/></svg> Retirar en el local
+          </a>
+        </div>
+      </div>
+      <svg class="route route--combo" aria-hidden="true"><use href="#route"/></svg>
+    </section>
+
+    <!-- EL LOCAL / GALERÍA -->
+    <section class="place" id="local">
+      <div class="place__head">
+        <p class="kicker">El local</p>
+        <h2 class="h2 reveal">Madera, ladrillo, la parrilla <em>a la vista</em><br/>y sobremesas largas.</h2>
+      </div>
+      <div class="gallery">
+        <figure class="g g--1 reveal"><img src="assets/img/interior.jpg" alt="Barra de madera con luces cálidas" loading="lazy" width="1400" height="933" data-parallax="-0.06" /></figure>
+        <figure class="g g--2 reveal"><img src="assets/img/g-plancha.jpg" alt="Corte en plancha caliente con espárragos" loading="lazy" width="1400" height="933" /></figure>
+        <figure class="g g--3 reveal"><img src="assets/img/g-parrillada.jpg" alt="Parrillada con salsas para compartir" loading="lazy" width="1400" height="933" /></figure>
+        <figure class="g g--4 reveal"><img src="assets/img/g-mesa.jpg" alt="Amigos comiendo en una mesa larga" loading="lazy" width="1400" height="933" data-parallax="-0.06" /></figure>
+        <figure class="g g--5 reveal"><img src="assets/img/g-plato.jpg" alt="Corte de carne jugoso emplatado" loading="lazy" width="1400" height="933" /></figure>
+      </div>
+    </section>
+
+    <!-- PEDIDOS Y RESERVAS -->
+    <section class="book" id="pedir">
+      <div class="book__intro">
+        <p class="kicker kicker--light">Pedidos y reservas</p>
+        <h2 class="h2">¿Cómo lo<br/><em>querés?</em></h2>
+        <p>Elegí si te lo llevamos, si pasás a buscarlo o si venís a comer al lado del fuego. Completá los datos y te abrimos WhatsApp con todo armado, listo para enviar.</p>
+        <ol class="book__steps">
+          <li><b>1</b> Elegí delivery, take away o reserva.</li>
+          <li><b>2</b> Armá tu pedido o elegí día y horario.</li>
+          <li><b>3</b> Lo enviás por WhatsApp y te confirmamos.</li>
+        </ol>
+        <div class="book__card">
+          <h3>¿Tenés una pregunta?</h3>
+          <p>Cumpleaños, grupos grandes, eventos o cortes especiales: escribinos.</p>
+          <a class="btn btn--white" data-wa="question" href="https://wa.me/5491167922355" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#wa"/></svg> Consultar por WhatsApp
+          </a>
+          <p class="book__phone">WhatsApp +54 9 11 6792-2355</p>
+        </div>
+      </div>
+
+      <form class="form" data-order novalidate>
+        <svg class="route route--form" aria-hidden="true"><use href="#route"/></svg>
+
+        <fieldset class="modes">
+          <legend class="label">¿Cómo lo querés?</legend>
+          <div class="modes__grid">
+            <label><input type="radio" name="mode" value="delivery" checked /><span><svg aria-hidden="true"><use href="#i-moto"/></svg><b>Delivery</b><small>Te lo llevamos</small></span></label>
+            <label><input type="radio" name="mode" value="takeaway" /><span><svg aria-hidden="true"><use href="#i-bag"/></svg><b>Take away</b><small>Lo pasás a buscar</small></span></label>
+            <label><input type="radio" name="mode" value="reserva" /><span><svg aria-hidden="true"><use href="#i-table"/></svg><b>Reserva</b><small>Comés acá</small></span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="f-name">Nombre</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="¿A nombre de quién?" />
+        </div>
+
+        <!-- Delivery -->
+        <div class="form__group" data-show="delivery">
+          <div class="field">
+            <label for="f-address">Dirección</label>
+            <input id="f-address" name="address" type="text" autocomplete="street-address" placeholder="Calle y número" />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-floor">Piso / depto <small>(opcional)</small></label>
+              <input id="f-floor" name="floor" type="text" placeholder="Ej: 3° B" />
+            </div>
+            <div class="field">
+              <label for="f-ref">Entre calles <small>(opcional)</small></label>
+              <input id="f-ref" name="ref" type="text" placeholder="Ej: Serrano y Thames" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Delivery y take away: el pedido -->
+        <div class="form__group" data-show="delivery takeaway">
+          <div class="field">
+            <span class="label">Tu pedido</span>
+            <ul class="cart" data-cart></ul>
+            <p class="cart__total"><span>Subtotal</span><b data-total>$0</b></p>
+            <p class="cart__hint" data-show="delivery">El costo de envío te lo confirmamos según la zona.</p>
+          </div>
+          <div class="field">
+            <label for="f-changes">¿Querés cambiar algo? <small>(opcional)</small></label>
+            <textarea id="f-changes" name="changes" rows="2" placeholder="Bife jugoso, entraña bien cocida, sin chimichurri, papas sin sal…"></textarea>
+          </div>
+          <div class="field" data-show="takeaway">
+            <label for="f-pickup">¿Cuándo pasás a buscarlo?</label>
+            <select id="f-pickup" name="pickup">
+              <option>Lo antes posible (25–35 min)</option>
+              <option>En 45 minutos</option>
+              <option>En 1 hora</option>
+              <option>Más tarde (lo aclaro en el chat)</option>
+            </select>
+          </div>
+          <div class="field">
+            <span class="label" id="l-pay">¿Cómo pagás?</span>
+            <div class="chips" role="radiogroup" aria-labelledby="l-pay">
+              <label><input type="radio" name="pay" value="Efectivo" checked /><span>Efectivo</span></label>
+              <label><input type="radio" name="pay" value="Transferencia" /><span>Transferencia</span></label>
+              <label><input type="radio" name="pay" value="Mercado Pago" /><span>Mercado Pago</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reserva -->
+        <div class="form__group" data-show="reserva" hidden>
+          <div class="field">
+            <span class="label" id="l-people">Personas</span>
+            <div class="people" role="radiogroup" aria-labelledby="l-people">
+              <label><input type="radio" name="people" value="1" /><span>1</span></label>
+              <label><input type="radio" name="people" value="2" checked /><span>2</span></label>
+              <label><input type="radio" name="people" value="3" /><span>3</span></label>
+              <label><input type="radio" name="people" value="4" /><span>4</span></label>
+              <label><input type="radio" name="people" value="5" /><span>5</span></label>
+              <label><input type="radio" name="people" value="6" /><span>6</span></label>
+              <label><input type="radio" name="people" value="7+" /><span>7+</span></label>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-date">Fecha</label>
+              <input id="f-date" name="date" type="date" />
+            </div>
+            <div class="field">
+              <label for="f-time">Horario</label>
+              <select id="f-time" name="time" data-slots>
+                <option value="">Elegí</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-occasion">Ocasión <small>(opcional)</small></label>
+            <select id="f-occasion" name="occasion">
+              <option value="">Ninguna en especial</option>
+              <option>Cumpleaños</option>
+              <option>Aniversario</option>
+              <option>Salida con amigos</option>
+              <option>Reunión de trabajo</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-notes">Comentarios <small>(opcional)</small></label>
+            <textarea id="f-notes" name="notes" rows="3" placeholder="Silla para bebé, alergias, mesa cerca de la parrilla…"></textarea>
+          </div>
+        </div>
+
+        <p class="form__error" data-error role="alert"></p>
+        <button class="btn btn--brand btn--full" type="submit">
+          <svg class="ico" aria-hidden="true"><use href="#wa"/></svg> <span data-submit-label>Enviar pedido por WhatsApp</span>
+        </button>
+        <p class="form__note" data-note>Te confirmamos el pedido, el total con envío y la demora por WhatsApp.</p>
+        <div class="form__done" data-done hidden>
+          <strong>¡Listo!</strong> <span data-done-text>Te abrimos WhatsApp con tu pedido.</span> Solo tenés que tocar enviar.
+          <a href="#" data-done-link target="_blank" rel="noopener">¿No se abrió? Tocá acá.</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- FAQ + INFO -->
+    <section class="info" id="faq">
+      <div class="faq">
+        <p class="kicker">Preguntas frecuentes</p>
+        <h2 class="h2 reveal">Lo que <em>siempre</em> nos preguntan.</h2>
+        <details>
+          <summary>¿Hasta dónde llega el delivery?</summary>
+          <p>Hacemos envíos en Palermo, Colegiales, Villa Crespo y Chacarita. Cuando nos mandás el pedido te confirmamos el costo de envío según la zona y cuánto tarda.</p>
+        </details>
+        <details>
+          <summary>¿La carne llega bien en delivery?</summary>
+          <p>Sí. La sacamos un punto antes y la mandamos en envases de cartón que no la humedecen, así llega como te gusta.</p>
+        </details>
+        <details>
+          <summary>¿Puedo elegir el punto de la carne?</summary>
+          <p>Claro. En el pedido tenés un lugar para aclararlo: jugoso, a punto o cocido, y cualquier otro cambio que necesites.</p>
+        </details>
+        <details>
+          <summary>¿Con cuánta anticipación conviene reservar?</summary>
+          <p>Para viernes, sábados y domingos al mediodía, con dos o tres días. Para grupos de 7 o más, escribinos por WhatsApp y armamos la mesa.</p>
+        </details>
+        <details>
+          <summary>¿Tienen opciones sin carne?</summary>
+          <p>Sí: provoleta, calabaza asada, ensaladas y verduras a las brasas. Avisanos si tenés alguna restricción.</p>
+        </details>
+        <details>
+          <summary>¿Qué medios de pago aceptan?</summary>
+          <p>Efectivo, transferencia y Mercado Pago, tanto en el local como en delivery y take away.</p>
+        </details>
+      </div>
+
+      <aside class="visit">
+        <div class="visit__card">
+          <img src="assets/img/logo.svg" alt="" width="84" height="84" loading="lazy" />
+          <h3>Visitanos</h3>
+          <dl class="hours">
+            <div><dt>Lunes y martes</dt><dd>Cerrado</dd></div>
+            <div><dt>Miércoles a viernes</dt><dd>20:00–00:30</dd></div>
+            <div><dt>Sábados y domingos</dt><dd>12:30–16:00 · 20:00–01:00</dd></div>
+          </dl>
+          <p class="visit__addr">Gorriti 5480, Palermo<br/><span>Ciudad Autónoma de Buenos Aires</span></p>
+          <p class="visit__tel">WhatsApp <a href="https://wa.me/5491167922355" target="_blank" rel="noopener">+54 9 11 6792-2355</a></p>
+          <div class="visit__map">
+            <iframe title="Mapa: Palermo, Buenos Aires" src="https://www.google.com/maps?q=Palermo,+Buenos+Aires&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="visit__ctas">
+            <a class="btn btn--brand btn--sm" href="https://www.google.com/maps/search/?api=1&amp;query=Palermo,+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn--ghost btn--sm" data-wa="question" href="https://wa.me/5491167922355" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <p class="foot__big" aria-hidden="true">Fuego Lento</p>
+    <div class="foot__row">
+      <img src="assets/img/logo.svg" alt="Fuego Lento" width="96" height="96" loading="lazy" />
+      <nav aria-label="Pie de página">
+        <a href="#menu">Carta</a>
+        <a href="#pedir">Pedidos y reservas</a>
+        <a href="#local">El local</a>
+        <a href="https://wa.me/5491167922355" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+      <p class="foot__small">Gorriti 5480, Palermo, CABA<br/>© <span data-year>2026</span> Fuego Lento · Marca ficticia, demo de restoweb · Fotos: Unsplash</p>
+    </div>
+    <svg class="route route--foot" aria-hidden="true"><use href="#route"/></svg>
+  </footer>
+
+  <!-- Pedido en curso -->
+  <a class="cart-pill" href="#pedir" data-cart-pill hidden>
+    <svg aria-hidden="true"><use href="#i-bag"/></svg> Tu pedido · <b data-cart-count>0</b>
+  </a>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" data-wa="question" href="https://wa.me/5491167922355" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg aria-hidden="true"><use href="#wa"/></svg>
+    <span>¿Consultas?</span>
+  </a>
+
+</body>
+</html>
