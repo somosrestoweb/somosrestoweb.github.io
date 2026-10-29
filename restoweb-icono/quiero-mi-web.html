@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiero mi web — restoweb</title>
+  <meta name="description" content="Contanos de tu restaurante y armamos tu web a medida: menú, pedidos y reservas por WhatsApp, sucursales con mapa y más." />
+  <meta name="theme-color" content="#F2F1ED" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261030c" />
+  <script defer src="lib/manifest.js?v=20261028b"></script>
+  <script defer src="main.js?v=20261029a"></script>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 32 32">
+      <path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.2 16 5.2s11 4.7 11 10.6-4.9 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.6-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/>
+    </symbol>
+    <symbol id="i-plate" viewBox="0 0 72 44">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 4v10c0 3 2 5 4 5s4-2 4-5V4M12 4v36"/>
+        <circle cx="36" cy="22" r="17"/>
+        <circle cx="36" cy="22" r="11"/>
+        <path d="M62 40V4c-4 2-6 7-6 13 0 4 2 6 6 6"/>
+      </g>
+    </symbol>
+    <symbol id="i-win" viewBox="0 0 40 46">
+      <rect x="2" y="2" width="36" height="42" rx="3" fill="none" stroke="currentColor" stroke-width="2.6"/>
+      <path d="M2 11h36" stroke="currentColor" stroke-width="2.2"/>
+      <circle cx="8" cy="6.6" r="1.7" fill="#E0533D"/><circle cx="13" cy="6.6" r="1.7" fill="#E8B23A"/><circle cx="18" cy="6.6" r="1.7" fill="#4CAF6A"/>
+    </symbol>
+  </svg>
+
+  <header class="nav" data-nav>
+    <a href="index.html" class="logo" aria-label="restoweb — inicio">rest<svg class="logo__plate" aria-hidden="true"><use href="#i-plate"/></svg>web<svg class="logo__win" aria-hidden="true"><use href="#i-win"/></svg></a>
+    <nav class="nav__links" data-menu aria-label="Principal">
+      <a href="index.html#incluye">Qué incluye</a>
+      <a href="index.html#pedidos">Pedidos</a>
+      <a href="index.html#ejemplos">Ejemplos</a>
+      <a href="index.html#faq">Preguntas</a>
+      <a href="quiero-mi-web.html" class="btn btn--ink btn--sm" aria-current="page">Quiero mi web</a>
+    </nav>
+    <button class="nav__burger" data-burger aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="apply-hero">
+      <p class="eyebrow eyebrow--pill"><span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span> Quiero mi web</p>
+      <h1 class="rise">Contanos de tu<br/><em>restaurante.</em></h1>
+      <p>Son tres pasos cortos. Al final te abrimos WhatsApp con todo resumido y nos lo mandás. Te respondemos con una propuesta a medida: las webs arrancan desde <strong>$90.000</strong> y el precio final depende de lo que necesites.</p>
+    </section>
+
+    <section class="apply">
+      <form class="wizard" data-wizard novalidate>
+        <div class="wizard__bar"><i></i><i></i><i></i><span data-step-label>Paso 1 de 3</span></div>
+        <div class="wizard__progress"><span data-progress></span></div>
+        <div class="wizard__body">
+
+          <!-- Paso 1 -->
+          <fieldset class="wstep is-active">
+            <legend>Vos y tu restaurante</legend>
+            <p class="wstep__hint">Lo básico para conocernos.</p>
+            <div class="fgrid">
+              <div class="f">
+                <label for="q-name">Tu nombre</label>
+                <input id="q-name" name="name" type="text" autocomplete="name" required data-label="tu nombre" placeholder="Ej: Martina" />
+              </div>
+              <div class="f">
+                <label for="q-phone">Tu WhatsApp</label>
+                <input id="q-phone" name="phone" type="tel" autocomplete="tel" required data-label="tu WhatsApp" placeholder="Ej: 11 2345-6789" />
+              </div>
+              <div class="f">
+                <label for="q-resto">Nombre del restaurante</label>
+                <input id="q-resto" name="resto" type="text" required data-label="nombre del restaurante" placeholder="Ej: La Esquina" />
+              </div>
+              <div class="f">
+                <label for="q-kind">Tipo de cocina</label>
+                <select id="q-kind" name="kind">
+                  <option value="">Elegí una opción</option>
+                  <option>Hamburguesería</option>
+                  <option>Parrilla</option>
+                  <option>Bodegón</option>
+                  <option>Pizzería</option>
+                  <option>Italiana / pastas</option>
+                  <option>Sushi / japonesa</option>
+                  <option>Café / brunch</option>
+                  <option>Bar / cervecería</option>
+                  <option>Heladería / pastelería</option>
+                  <option>Cocina de autor</option>
+                  <option>Vegetariana / vegana</option>
+                  <option>Otra</option>
+                </select>
+              </div>
+              <div class="f">
+                <label for="q-locality">Localidad</label>
+                <select id="q-locality" name="locality" required data-label="localidad" data-localities>
+                  <option value="">Elegí una localidad</option>
+                </select>
+              </div>
+              <div class="f">
+                <label for="q-barrio">Barrio <small>(solo Capital Federal)</small></label>
+                <select id="q-barrio" name="barrio" disabled data-label="barrio" data-barrios>
+                  <option value="">Primero elegí Capital Federal</option>
+                </select>
+              </div>
+              <div class="f">
+                <label for="q-branches">Sucursales</label>
+                <select id="q-branches" name="branches">
+                  <option>1</option><option>2</option><option>3</option><option>4 o más</option>
+                </select>
+              </div>
+              <div class="f f--full">
+                <label for="q-ig">Instagram <small>(opcional)</small></label>
+                <input id="q-ig" name="instagram" type="text" placeholder="@turestaurante" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Paso 2 -->
+          <fieldset class="wstep">
+            <legend>La estética</legend>
+            <p class="wstep__hint">¿Cómo se siente tu lugar? Elegí todas las que quieras.</p>
+            <div class="fgrid">
+              <div class="f f--full">
+                <span class="flabel">Estilo</span>
+                <div class="pills">
+                  <label><input type="checkbox" name="style" value="Elegante" /><span>Elegante</span></label>
+                  <label><input type="checkbox" name="style" value="Moderno" /><span>Moderno</span></label>
+                  <label><input type="checkbox" name="style" value="Rústico" /><span>Rústico</span></label>
+                  <label><input type="checkbox" name="style" value="Minimalista" /><span>Minimalista</span></label>
+                  <label><input type="checkbox" name="style" value="Divertido / colorido" /><span>Divertido / colorido</span></label>
+                  <label><input type="checkbox" name="style" value="Clásico" /><span>Clásico</span></label>
+                  <label><input type="checkbox" name="style" value="Oscuro y sofisticado" /><span>Oscuro y sofisticado</span></label>
+                  <label><input type="checkbox" name="style" value="Natural" /><span>Natural</span></label>
+                </div>
+              </div>
+              <div class="f f--full">
+                <label for="q-colors">Colores que te representan <small>(opcional)</small></label>
+                <input id="q-colors" name="colors" type="text" placeholder="Ej: rojo y blanco como el logo, tonos tierra…" />
+              </div>
+              <div class="f">
+                <span class="flabel">¿Tenés logo?</span>
+                <div class="pills">
+                  <label><input type="radio" name="logo" value="Sí" checked /><span>Sí</span></label>
+                  <label><input type="radio" name="logo" value="No" /><span>No</span></label>
+                  <label><input type="radio" name="logo" value="En proceso" /><span>En proceso</span></label>
+                </div>
+              </div>
+              <div class="f">
+                <span class="flabel">¿Tenés fotos?</span>
+                <div class="pills">
+                  <label><input type="radio" name="photos" value="Sí, propias" checked /><span>Sí, propias</span></label>
+                  <label><input type="radio" name="photos" value="Algunas" /><span>Algunas</span></label>
+                  <label><input type="radio" name="photos" value="No" /><span>No</span></label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Paso 3 -->
+          <fieldset class="wstep">
+            <legend>Lo que necesitás</legend>
+            <p class="wstep__hint">Marcá las secciones que querés en tu web.</p>
+            <div class="fgrid">
+              <div class="f f--full">
+                <span class="flabel">Secciones</span>
+                <div class="pills">
+                  <label><input type="checkbox" name="sections" value="Menú con fotos" checked /><span>Menú con fotos</span></label>
+                  <label><input type="checkbox" name="sections" value="Reservas por WhatsApp" checked /><span>Reservas por WhatsApp</span></label>
+                  <label><input type="checkbox" name="sections" value="Contacto por WhatsApp" checked /><span>Contacto por WhatsApp</span></label>
+                  <label><input type="checkbox" name="sections" value="Sucursales con mapa" /><span>Sucursales con mapa</span></label>
+                  <label><input type="checkbox" name="sections" value="Galería de fotos" /><span>Galería de fotos</span></label>
+                  <label><input type="checkbox" name="sections" value="Historia del lugar" /><span>Historia del lugar</span></label>
+                  <label><input type="checkbox" name="sections" value="Pedidos por WhatsApp (delivery y take away)" checked /><span>Pedidos por WhatsApp (delivery y take away)</span></label>
+                  <label><input type="checkbox" name="sections" value="Eventos y cumpleaños" /><span>Eventos y cumpleaños</span></label>
+                  <label><input type="checkbox" name="sections" value="Preguntas frecuentes" /><span>Preguntas frecuentes</span></label>
+                </div>
+              </div>
+              <div class="f">
+                <span class="flabel">¿Tenés dominio? <small>(ej: turesto.com.ar)</small></span>
+                <div class="pills">
+                  <label><input type="radio" name="domain" value="Sí" /><span>Sí</span></label>
+                  <label><input type="radio" name="domain" value="No" checked /><span>No</span></label>
+                  <label><input type="radio" name="domain" value="No sé" /><span>No sé</span></label>
+                </div>
+              </div>
+              <div class="f">
+                <label for="q-when">¿Para cuándo?</label>
+                <select id="q-when" name="when">
+                  <option>Lo antes posible</option>
+                  <option>En las próximas semanas</option>
+                  <option>En 1 o 2 meses</option>
+                  <option>Solo estoy averiguando</option>
+                </select>
+              </div>
+              <div class="f f--full">
+                <label for="q-notes">Algo más que quieras contarnos <small>(opcional)</small></label>
+                <textarea id="q-notes" name="notes" rows="4" placeholder="Ideas, webs que te gustan, lo que no puede faltar…"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <p class="wizard__error" data-error role="alert"></p>
+          <p class="no-js-note">Para enviar el formulario necesitás tener JavaScript activado. También podés escribirnos directo al WhatsApp +54 9 11 6792-2355.</p>
+          <div class="wizard__nav">
+            <button type="button" class="btn btn--line btn--sm" data-prev hidden>← Atrás</button>
+            <button type="button" class="btn btn--ink" data-next>Siguiente →</button>
+            <button type="submit" class="btn btn--copper" data-send hidden><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Enviar por WhatsApp</button>
+          </div>
+          <div class="wizard__done" data-done hidden>
+            <strong>¡Gracias!</strong> Te abrimos WhatsApp con todo listo. Solo tocá enviar y te respondemos a la brevedad.
+            <a href="#" data-done-link target="_blank" rel="noopener">¿No se abrió? Tocá acá.</a>
+          </div>
+        </div>
+      </form>
+
+      <aside class="aside">
+        <div class="summary">
+          <h3><span class="dot dot--g"></span> Tu resumen</h3>
+          <dl>
+            <div><dt>Restaurante</dt><dd data-sum="resto"></dd></div>
+            <div><dt>Cocina</dt><dd data-sum="kind"></dd></div>
+            <div><dt>Ubicación</dt><dd data-sum="city"></dd></div>
+            <div><dt>Sucursales</dt><dd data-sum="branches"></dd></div>
+            <div><dt>Estilo</dt><dd data-sum="style"></dd></div>
+            <div><dt>Secciones</dt><dd data-sum="sections"></dd></div>
+            <div><dt>Para cuándo</dt><dd data-sum="when"></dd></div>
+          </dl>
+        </div>
+        <div class="next">
+          <h3>¿Qué pasa después?</h3>
+          <ol>
+            <li>Recibimos tu mensaje por WhatsApp.</li>
+            <li>Te escribimos para conocer mejor tu lugar y pedirte logo, fotos y menú.</li>
+            <li>Te pasamos una propuesta y un presupuesto a medida.</li>
+          </ol>
+          <a class="btn btn--line btn--sm btn--full" data-wa="question" href="https://wa.me/5491167922355" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Prefiero preguntar primero</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a href="index.html" class="logo logo--lg" aria-label="restoweb">rest<svg class="logo__plate" aria-hidden="true"><use href="#i-plate"/></svg>web<svg class="logo__win" aria-hidden="true"><use href="#i-win"/></svg></a>
+    <nav aria-label="Pie de página">
+      <a href="index.html#incluye">Qué incluye</a>
+      <a href="index.html#ejemplos">Ejemplos</a>
+      <a href="quiero-mi-web.html">Quiero mi web</a>
+      <a href="https://wa.me/5491167922355" target="_blank" rel="noopener">WhatsApp +54 9 11 6792-2355</a>
+    </nav>
+    <p class="foot__small">© <span data-year>2026</span> restoweb · Páginas web para restaurantes</p>
+  </footer>
+
+  <a class="wa-float" data-wa="question" href="https://wa.me/5491167922355" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg><span>¿Dudas?</span>
+  </a>
+
+</body>
+</html>
