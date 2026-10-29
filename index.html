@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>restoweb — Páginas web profesionales para restaurantes</title>
+  <meta name="description" content="restoweb diseña páginas web completas para restaurantes, a medida de su estética: menú con fotos, pedidos y reservas por WhatsApp (delivery, take away y mesa), sucursales con mapa y contacto directo." />
+  <meta name="theme-color" content="#F2F1ED" />
+  <meta property="og:title" content="restoweb — Tu restaurante, servido en la web" />
+  <meta property="og:description" content="Webs a medida para restaurantes: menú, pedidos y reservas por WhatsApp, sucursales con mapa." />
+  <meta property="og:image" content="assets/img/logo-restoweb.png" />
+  <link rel="icon" type="image/png" href="assets/img/logo-restoweb.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&family=Cormorant+Garamond:wght@400;600&family=Fredoka:wght@500;600&family=Oswald:wght@500;700&family=Bricolage+Grotesque:opsz,wght@12..96,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261030c" />
+  <script defer src="lib/gsap.min.js?v=20261028c"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20261028c"></script>
+  <script defer src="lib/manifest.js?v=20261028c"></script>
+  <script defer src="main.js?v=20261029a"></script>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 32 32">
+      <path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.2 16 5.2s11 4.7 11 10.6-4.9 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.6-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/>
+    </symbol>
+    <symbol id="i-plate" viewBox="0 0 72 44">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 4v10c0 3 2 5 4 5s4-2 4-5V4M12 4v36"/>
+        <circle cx="36" cy="22" r="17"/>
+        <circle cx="36" cy="22" r="11"/>
+        <path d="M62 40V4c-4 2-6 7-6 13 0 4 2 6 6 6"/>
+      </g>
+    </symbol>
+    <symbol id="i-win" viewBox="0 0 40 46">
+      <rect x="2" y="2" width="36" height="42" rx="3" fill="none" stroke="currentColor" stroke-width="2.6"/>
+      <path d="M2 11h36" stroke="currentColor" stroke-width="2.2"/>
+      <circle cx="8" cy="6.6" r="1.7" fill="#E0533D"/><circle cx="13" cy="6.6" r="1.7" fill="#E8B23A"/><circle cx="18" cy="6.6" r="1.7" fill="#4CAF6A"/>
+    </symbol>
+  </svg>
+
+  <!-- Splash -->
+  <div class="splash" data-splash aria-hidden="true">
+    <span class="logo logo--xl">rest<svg class="logo__plate"><use href="#i-plate"/></svg>web<svg class="logo__win"><use href="#i-win"/></svg></span>
+  </div>
+
+  <header class="nav" data-nav>
+    <a href="index.html" class="logo" aria-label="restoweb — inicio">rest<svg class="logo__plate" aria-hidden="true"><use href="#i-plate"/></svg>web<svg class="logo__win" aria-hidden="true"><use href="#i-win"/></svg></a>
+    <nav class="nav__links" data-menu aria-label="Principal">
+      <a href="#incluye">Qué incluye</a>
+      <a href="#pedidos">Pedidos</a>
+      <a href="#ejemplos">Ejemplos</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#faq">Preguntas</a>
+      <a href="quiero-mi-web.html" class="btn btn--ink btn--sm">Quiero mi web</a>
+    </nav>
+    <button class="nav__burger" data-burger aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--pill"><span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span> Webs para restaurantes</p>
+        <h1 class="hero__title">Tu restaurante,<br/><span class="rotator" data-rotate="servido|pedido|reservado|recomendado"><em>servido</em></span> en la web.</h1>
+        <p class="hero__lead">Diseñamos la página completa de tu restaurante, hecha a medida de tu estética: menú con fotos, pedidos y reservas por WhatsApp, sucursales con mapa y todo lo que tus clientes buscan antes de venir.</p>
+        <div class="hero__ctas">
+          <a href="quiero-mi-web.html" class="btn btn--copper magnetic">Quiero mi web</a>
+          <a href="#ejemplos" class="btn btn--line">Ver ejemplos</a>
+        </div>
+      </div>
+
+      <div class="hero__stage" data-stage>
+        <div class="fan fan--l" data-depth="0.35">
+          <div class="browser browser--dark">
+            <div class="browser__bar"><i></i><i></i><i></i><span>umamiroom.com</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--umami">
+                <img class="m-bg" src="assets/img/umami-2.jpg" alt="" />
+                <div class="m-nav"><b>UMAMI ROOM</b><span>OMAKASE · CARTA · RESERVAS</span></div>
+                <div class="m-copy"><small>Nikkei · Barra de 12 lugares</small><h4>El arte<br/>del detalle</h4><span class="m-btn">Reservar experiencia</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fan fan--r" data-depth="0.35">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span>brotecafe.com.ar</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--brote">
+                <div class="m-nav"><b>brote ☼</b><span>brunch · café · tienda</span></div>
+                <div class="m-hero">
+                  <div class="m-copy"><small>café de especialidad</small><h4>Buenos días<br/>todo el día.</h4><span class="m-btn">ver el menú</span></div>
+                  <div class="m-blob"><img src="assets/img/brote-3.jpg" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fan fan--c" data-depth="0.7">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span>nonnalu.com.ar</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--nonna">
+                <div class="m-nav"><b>Nonna Lu</b><span>La carta · Reservas · Contacto</span></div>
+                <div class="m-hero">
+                  <div class="m-copy"><small>Trattoria · desde 1987</small><h4>Pasta fresca,<br/><em>como en casa.</em></h4><span class="m-btn">Reservar</span></div>
+                  <div class="m-pics"><img src="assets/img/nonna-3.jpg" alt="" /><img src="assets/img/nonna-2.jpg" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone phone--hero" data-depth="1.1">
+          <div class="phone__top"><span class="phone__avatar phone__avatar--olive">NL</span><div><b>Nonna Lu</b><small>en línea</small></div></div>
+          <div class="phone__chat">
+            <div class="bubble bubble--out">
+              <p>¡Hola! Quiero reservar una mesa 🍝<br/><br/>• Nombre: Sofía<br/>• Personas: 4<br/>• Día: sábado 15/11<br/>• Horario: 21:00</p>
+              <span class="bubble__time">21:04 ✓✓</span>
+            </div>
+            <div class="bubble bubble--in">
+              <p>¡Hola Sofía! Te esperamos el sábado a las 21 h 🍷</p>
+              <span class="bubble__time">21:05</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chip chip--float" data-depth="1.4"><svg class="ico"><use href="#i-wa"/></svg> Nuevo pedido · delivery</div>
+      </div>
+
+      <ul class="hero__ticks">
+        <li>Diseño 100% a medida</li>
+        <li>Pensada para celular</li>
+        <li>Pedidos y reservas a tu WhatsApp</li>
+        <li>Sin saber de tecnología</li>
+      </ul>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+      <p class="intro__text reveal">Tus clientes te buscan en Google, miran el menú desde el celular y quieren pedir o reservar sin llamar. <span>Una web propia hace todo eso por vos, con la cara de tu restaurante y no la de una plantilla.</span></p>
+      <div class="intro__photos">
+        <figure class="reveal"><img src="assets/img/rw-guest.jpg" alt="Clienta disfrutando en un restaurante" loading="lazy" width="1200" height="800" /></figure>
+        <figure class="reveal"><img src="assets/img/rw-sharing.jpg" alt="Mesa compartida con platos variados" loading="lazy" width="1200" height="800" /></figure>
+      </div>
+    </section>
+
+    <!-- QUÉ INCLUYE -->
+    <section class="features" id="incluye">
+      <div class="section-head">
+        <p class="eyebrow">Qué incluye</p>
+        <h2 class="h2 reveal">Todo lo que tu restaurante<br/>necesita, <em>en una sola web.</em></h2>
+      </div>
+      <div class="features__grid">
+        <article class="feat feat--big reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h22l6 6v30H10z"/><path d="M32 6v6h6M16 20h16M16 27h16M16 34h10"/></g></svg>
+          <h3>Menú con fotos</h3>
+          <p>Tu carta organizada por categorías, con fotos, descripciones y precios. Fácil de leer desde el celular y fácil de actualizar cuando cambia algo.</p>
+        </article>
+        <article class="feat feat--big feat--copper reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="31" rx="4"/><path d="M7 19h34M16 6v8M32 6v8M17 29l5 5 9-9"/></g></svg>
+          <h3>Pedidos y reservas por WhatsApp</h3>
+          <p>El cliente elige delivery, take away o reservar mesa. Arma su pedido desde el menú (o elige día, horario y personas) y la web te manda todo a tu WhatsApp, listo para confirmar.</p>
+        </article>
+        <article class="feat reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 43s14-12 14-23a14 14 0 0 0-28 0c0 11 14 23 14 23z"/><circle cx="24" cy="20" r="5"/></g></svg>
+          <h3>Sucursales con mapa</h3>
+          <p>Cada local con su dirección, horarios, mapa y botón de "Cómo llegar".</p>
+        </article>
+        <article class="feat reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-wa"/></svg>
+          <h3>Contacto por WhatsApp</h3>
+          <p>Un botón siempre a mano para consultas, eventos o grupos grandes.</p>
+        </article>
+        <article class="feat reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M24 14v10l7 5"/></g></svg>
+          <h3>Datos del restaurante</h3>
+          <p>Horarios, dirección, redes, medios de pago y preguntas frecuentes.</p>
+        </article>
+        <article class="feat reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34l10-12 8 9 6-6 8 9"/><rect x="6" y="8" width="36" height="32" rx="4"/><circle cx="33" cy="17" r="3"/></g></svg>
+          <h3>Galería y tu historia</h3>
+          <p>Fotos del local, de los platos y la historia que hace único a tu lugar.</p>
+        </article>
+        <article class="feat reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="5" width="20" height="38" rx="4"/><path d="M21 37h6"/></g></svg>
+          <h3>Perfecta en celular</h3>
+          <p>Diseñada primero para el teléfono, que es desde donde te van a mirar.</p>
+        </article>
+        <article class="feat reveal">
+          <svg class="feat__ico" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l4 9 10 1-7.5 7 2 10L24 28l-8.5 5 2-10L10 16l10-1z"/></g></svg>
+          <h3>Estética a medida</h3>
+          <p>Colores, tipografías y estilo tomados de tu logo y de tu local.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PEDIDOS Y RESERVAS DEMO -->
+    <section class="demo" id="pedidos">
+      <div class="demo__bar"><i></i><i></i><i></i><span>turestaurante.com.ar/pedidos</span></div>
+      <div class="demo__inner">
+        <div class="demo__copy">
+          <p class="eyebrow">Probalo vos</p>
+          <h2 class="h2">Así te piden<br/>tus <em>clientes.</em></h2>
+          <p>Elegí delivery, take away o reserva, completá la prueba y mirá cómo se arma el mensaje que te llega al WhatsApp. Sin apps, sin comisiones, sin planillas.</p>
+        <form class="demo__form" data-demo onsubmit="return false">
+          <div class="demo__modes" role="radiogroup" aria-label="Tipo de pedido">
+            <label><input type="radio" name="mode" value="delivery" checked /><span>Delivery</span></label>
+            <label><input type="radio" name="mode" value="takeaway" /><span>Take away</span></label>
+            <label><input type="radio" name="mode" value="reserva" /><span>Reserva</span></label>
+          </div>
+          <label>Nombre<input type="text" name="name" value="Sofía" maxlength="24" /></label>
+          <label data-show="delivery">Dirección<input type="text" name="address" value="Thames 1450, 2° A" maxlength="40" /></label>
+          <div class="demo__row" data-show="delivery takeaway">
+            <label>Pedido
+              <select name="order"><option>2 × burger clásica + papas</option><option>1 × burger doble + papas</option><option>3 × burger clásica + 2 gaseosas</option></select>
+            </label>
+            <label>Cambios
+              <select name="changes"><option value="">Ninguno</option><option selected>Sin cebolla</option><option>Sin pepinos</option><option>Papas sin sal</option></select>
+            </label>
+          </div>
+          <label data-show="takeaway">Retiro
+            <select name="pickup"><option>Lo antes posible</option><option>En 30 minutos</option><option>En 1 hora</option></select>
+          </label>
+          <div class="demo__row" data-show="reserva">
+            <label>Personas
+              <select name="people"><option>2</option><option selected>4</option><option>6</option><option>8+</option></select>
+            </label>
+            <label>Día
+              <select name="day"><option>viernes</option><option selected>sábado</option><option>domingo</option></select>
+            </label>
+          </div>
+          <div class="demo__row" data-show="reserva">
+            <label>Horario
+              <select name="time"><option>20:00</option><option selected>21:00</option><option>22:00</option></select>
+            </label>
+            <label>Ocasión
+              <select name="occasion"><option value="">Ninguna</option><option selected>Cumpleaños</option><option>Aniversario</option><option>Reunión de trabajo</option></select>
+            </label>
+          </div>
+        </form>
+        </div>
+        <div class="demo__phone">
+        <div class="phone phone--demo">
+          <div class="phone__top"><span class="phone__avatar phone__avatar--copper">TR</span><div><b>Tu Restaurante</b><small>en línea</small></div></div>
+          <div class="phone__chat">
+            <div class="bubble bubble--out bubble--live">
+              <p data-demo-out>¡Hola! Quiero hacer un pedido para delivery 🛵<br/><br/>• Nombre: Sofía<br/>• Dirección: Thames 1450, 2° A<br/>• Pedido: 2 × burger clásica + papas<br/>• Cambios: Sin cebolla</p>
+              <span class="bubble__time">ahora ✓✓</span>
+            </div>
+          </div>
+          <div class="phone__input"><span>Mensaje</span><i><svg class="ico"><use href="#i-wa"/></svg></i></div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- EJEMPLOS -->
+    <section class="work" id="ejemplos">
+      <div class="section-head section-head--row">
+        <div>
+          <p class="eyebrow">Ejemplos</p>
+          <h2 class="h2 reveal">Cada restaurante,<br/><em>su propia estética.</em></h2>
+        </div>
+        <p class="section-head__aside reveal">Ninguna web se parece a otra. Partimos de tu logo, tu local y tu comida, y de ahí salen los colores, las tipografías y el tono.</p>
+      </div>
+
+      <div class="work__grid">
+        <!-- Bondi Smash (marca ficticia) -->
+        <article class="case case--wide reveal">
+          <a class="browser" href="demos/bondi-smash/index.html" target="_blank" rel="noopener" aria-label="Abrir la demo de Bondi Smash">
+            <div class="browser__bar"><i></i><i></i><i></i><span>bondismash.com.ar</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--bondi">
+                <div class="m-nav"><img src="assets/img/bondi-logo.svg" alt="" /><span>Historia · Menú · El local</span><b>Pedir o reservar</b></div>
+                <div class="m-hero">
+                  <div class="m-copy"><small>Smash burgers · Villa Crespo</small><h4>Próxima parada: <em>tu antojo.</em></h4><span class="m-btn">Pedir o reservar</span></div>
+                  <div class="m-disc"><img src="assets/img/bondi-1.jpg" alt="" loading="lazy" /></div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="case__info">
+            <div>
+              <span class="badge badge--live">● Demo navegable</span>
+              <h3>Bondi Smash</h3>
+              <p>Hamburguesería · Azul colectivo, mostaza y crema. Pedidos por delivery y take away, y reservas, todo por WhatsApp.</p>
+            </div>
+            <div class="case__side">
+              <span class="swatches"><i style="background:#1F3A93"></i><i style="background:#F5B700"></i><i style="background:#FFF6E3"></i><i style="background:#D93A2B"></i></span>
+              <a class="link-arrow" href="demos/bondi-smash/index.html" target="_blank" rel="noopener">Ver la web completa →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Fuego Lento (marca ficticia) -->
+        <article class="case case--wide case--flip reveal">
+          <a class="browser browser--dark" href="demos/fuego-lento/index.html" target="_blank" rel="noopener" aria-label="Abrir la demo de Fuego Lento">
+            <div class="browser__bar"><i></i><i></i><i></i><span>fuegolento.com.ar</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--fuego">
+                <div class="m-nav"><b>FUEGO LENTO</b><span>CARTA · EL LOCAL · PEDIDOS</span></div>
+                <div class="m-hero">
+                  <div class="m-img"><img src="assets/img/fuego-1.jpg" alt="" loading="lazy" /></div>
+                  <div class="m-copy"><small>Parrilla a leña · Palermo</small><h4>Leña,<br/>tiempo y<br/><em>buena carne.</em></h4><span class="m-btn">Pedir o reservar</span></div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="case__info">
+            <div>
+              <span class="badge badge--live">● Demo navegable</span>
+              <h3>Fuego Lento</h3>
+              <p>Parrilla · Madera oscura, ámbar de brasa, tipografía fuerte. Delivery, take away y reservas por WhatsApp.</p>
+            </div>
+            <div class="case__side">
+              <span class="swatches"><i style="background:#1D1612"></i><i style="background:#E07B2E"></i><i style="background:#EFE6D8"></i></span>
+              <a class="link-arrow" href="demos/fuego-lento/index.html" target="_blank" rel="noopener">Ver la web completa →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Nonna Lu -->
+        <article class="case reveal">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span>nonnalu.com.ar</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--nonna">
+                <div class="m-nav"><b>Nonna Lu</b><span>La carta · Reservas · Contacto</span></div>
+                <div class="m-hero">
+                  <div class="m-copy"><small>Trattoria · desde 1987</small><h4>Pasta fresca,<br/><em>como en casa.</em></h4><span class="m-btn">Reservar</span></div>
+                  <div class="m-pics"><img src="assets/img/nonna-1.jpg" alt="" loading="lazy" /><img src="assets/img/nonna-2.jpg" alt="" loading="lazy" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case__info">
+            <div><span class="badge">Concepto</span><h3>Nonna Lu</h3><p>Trattoria italiana · Serif clásica, crema y verde oliva.</p></div>
+            <span class="swatches"><i style="background:#F4EDE1"></i><i style="background:#4E5B31"></i><i style="background:#B4432D"></i></span>
+          </div>
+        </article>
+
+        <!-- Umami Room -->
+        <article class="case reveal">
+          <div class="browser browser--dark">
+            <div class="browser__bar"><i></i><i></i><i></i><span>umamiroom.com</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--umami">
+                <img class="m-bg" src="assets/img/umami-1.jpg" alt="" loading="lazy" />
+                <div class="m-nav"><b>UMAMI ROOM</b><span>OMAKASE · CARTA · RESERVAS</span></div>
+                <div class="m-copy"><small>Nikkei · Barra de 12 lugares</small><h4>El arte<br/>del detalle</h4><span class="m-btn">Reservar experiencia</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="case__info">
+            <div><span class="badge">Concepto</span><h3>Umami Room</h3><p>Sushi nikkei · Negro profundo, dorado y mucho silencio.</p></div>
+            <span class="swatches"><i style="background:#0E0E0E"></i><i style="background:#C9A464"></i><i style="background:#EDE6DA"></i></span>
+          </div>
+        </article>
+
+        <!-- Brote -->
+        <article class="case reveal">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span>brotecafe.com.ar</span></div>
+            <div class="browser__screen">
+              <div class="mock mock--brote">
+                <div class="m-nav"><b>brote ☼</b><span>brunch · café · tienda</span></div>
+                <div class="m-hero">
+                  <div class="m-copy"><small>café de especialidad</small><h4>Buenos días<br/>todo el día.</h4><span class="m-btn">ver el menú</span></div>
+                  <div class="m-blob"><img src="assets/img/brote-2.jpg" alt="" loading="lazy" /></div>
+                  <div class="m-sticker"><img src="assets/img/brote-1.jpg" alt="" loading="lazy" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case__info">
+            <div><span class="badge">Concepto</span><h3>Brote Café</h3><p>Brunch y café · Pasteles, formas redondas, tono alegre.</p></div>
+            <span class="swatches"><i style="background:#FFF4E6"></i><i style="background:#9DBF9E"></i><i style="background:#F2A7A0"></i><i style="background:#2F3E2E"></i></span>
+          </div>
+        </article>
+      </div>
+
+      <div class="work__cta reveal">
+        <p>¿Te gustó alguna estética? Contanos cuál y la adaptamos a tu restaurante.</p>
+        <a class="btn btn--line" data-wa="example" href="https://wa.me/5491167922355" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg> Consultar por WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="process" id="proceso">
+      <div class="section-head">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2 class="h2 reveal">De tu mesa a la web<br/><em>en cuatro pasos.</em></h2>
+      </div>
+      <ol class="steps" data-steps>
+        <li class="step reveal">
+          <span class="step__n">01</span>
+          <h3>Nos contás</h3>
+          <p>Completás el formulario de "Quiero mi web" o nos escribís. Nos pasás logo, fotos, menú y datos de tus locales.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">02</span>
+          <h3>Diseñamos</h3>
+          <p>Armamos la estética a partir de tu marca y construimos la web completa con todas sus secciones.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">03</span>
+          <h3>Revisás</h3>
+          <p>Te mostramos la web funcionando y ajustamos textos, fotos o colores hasta que quede como querés.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">04</span>
+          <h3>Publicamos</h3>
+          <p>La subimos a internet con tu dominio y te quedás con una web lista para compartir en tus redes.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- QUOTE / BAND -->
+    <section class="band">
+      <img src="assets/img/rw-dining.jpg" alt="" loading="lazy" width="1200" height="800" data-parallax="-0.08" />
+      <div class="band__copy">
+        <p class="band__quote reveal">"Instagram muestra tus platos.<br/><em>Tu web hace que vengan."</em></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 class="h2 reveal">Lo que nos<br/><em>suelen preguntar.</em></h2>
+      </div>
+      <div class="faq__list">
+        <details>
+          <summary>¿Necesito saber de tecnología?</summary>
+          <p>No. Nosotros nos encargamos de todo: diseño, armado y publicación. Vos solo nos pasás la información de tu restaurante.</p>
+        </details>
+        <details>
+          <summary>¿Cómo funcionan los pedidos y reservas por WhatsApp?</summary>
+          <p>El cliente elige cómo lo quiere: delivery (pone su dirección y arma el pedido desde el menú), take away (arma el pedido y elige cuándo pasa a buscarlo) o reserva (día, horario y cantidad de personas). En todos los casos puede aclarar cambios, como "sin cebolla". Al enviarlo se abre WhatsApp con el mensaje armado hacia tu número, y vos confirmás desde ahí.</p>
+        </details>
+        <details>
+          <summary>¿Puedo mostrar varias sucursales?</summary>
+          <p>Sí. Cada sucursal puede tener su dirección, horarios, mapa, botón para llegar y, si querés, su propio WhatsApp de pedidos y reservas.</p>
+        </details>
+        <details>
+          <summary>¿Puedo cambiar el menú o los precios después?</summary>
+          <p>Sí. Escribinos con los cambios y los actualizamos.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto cuesta?</summary>
+          <p>Las webs arrancan desde <strong>$90.000</strong> (pesos argentinos). El precio final depende de varios factores: cuántas secciones necesitás, si tenés una o varias sucursales, si sumás pedidos y reservas por WhatsApp y qué tan grande es tu carta. Completá "Quiero mi web" o escribinos por WhatsApp y te pasamos un presupuesto a medida.</p>
+        </details>
+        <details>
+          <summary>¿Necesito tener dominio y hosting?</summary>
+          <p>No hace falta que los tengas. Te asesoramos para conseguirlos y dejamos todo publicado.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <svg class="cta__plate" aria-hidden="true"><use href="#i-plate"/></svg>
+      <h2 class="cta__title reveal">¿Le hacemos la web<br/>a tu <em>restaurante?</em></h2>
+      <p class="reveal">Contanos cómo es tu lugar y te respondemos con una propuesta.</p>
+      <div class="price-tag reveal">
+        <span class="price-tag__from">Webs desde</span>
+        <strong class="price-tag__amount">$90.000</strong>
+        <span class="price-tag__note">Pesos argentinos. El precio final depende de las secciones, las sucursales y lo que necesites.</span>
+      </div>
+      <div class="cta__btns reveal">
+        <a href="quiero-mi-web.html" class="btn btn--copper magnetic">Quiero mi web</a>
+        <a class="btn btn--light" data-wa="question" href="https://wa.me/5491167922355" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg> Tengo una duda</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <a href="index.html" class="logo logo--lg" aria-label="restoweb">rest<svg class="logo__plate" aria-hidden="true"><use href="#i-plate"/></svg>web<svg class="logo__win" aria-hidden="true"><use href="#i-win"/></svg></a>
+    <nav aria-label="Pie de página">
+      <a href="#incluye">Qué incluye</a>
+      <a href="#ejemplos">Ejemplos</a>
+      <a href="quiero-mi-web.html">Quiero mi web</a>
+      <a href="https://wa.me/5491167922355" target="_blank" rel="noopener">WhatsApp +54 9 11 6792-2355</a>
+    </nav>
+    <p class="foot__small">© <span data-year>2026</span> restoweb · Páginas web para restaurantes · Fotos de ejemplo: Unsplash</p>
+  </footer>
+
+  <a class="wa-float" data-wa="question" href="https://wa.me/5491167922355" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg><span>¿Dudas?</span>
+  </a>
+
+</body>
+</html>
